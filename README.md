@@ -9,6 +9,8 @@
 
 
   import React from 'react';
+  import BlockUi from 'react-block-full-ui'
+  
   class Fancy extends React.Component {
     constructor(props){
       this.state({loading:false})
@@ -16,7 +18,7 @@
     render() {
       return (
         <div>
-          <Loading show={this.state.loading}  />
+          <BlockUi show={this.state.loading}  />
           This is so Fancy!
         </div>
       );

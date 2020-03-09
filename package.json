@@ -1,7 +1,7 @@
 {
   "name": "react-block-full-ui",
   "npmName": "react-block-full-ui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "This component Block Full Ui",
   "main": "dist/index.js",
   "scripts": {
