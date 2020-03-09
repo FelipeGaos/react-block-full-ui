@@ -6,7 +6,6 @@ export default function Loading (props) {
 
   useEffect(()=>{
     setShow(props.show)
-    console.log(show)
   })
 
   if(!show) return null;

@@ -24,7 +24,6 @@ function Loading(props) {
 
   (0, _react.useEffect)(function () {
     setShow(props.show);
-    console.log(show);
   });
 
   if (!show) return null;
