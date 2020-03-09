@@ -1,0 +1,76 @@
+{
+  "name": "react-block-full-ui",
+  "npmName": "react-block-full-ui",
+  "version": "0.0.1",
+  "description": "This component Block Full Ui",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development",
+    "clean": "rimraf dist",
+    "transpile": "babel src -d dist --copy-files",
+    "prepublishOnly": "yarn clean && yarn transpile",
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d examples/dist",
+    "pusblish-npm": "yarn prepublishOnly && yarn publish",
+    "publish-demo": "yarn build && yarn deploy"
+  },
+  "peerDependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "block",
+    "blockui",
+    "block ui react",
+    "react-block-full-ui",
+    "react-block-ui"
+  ],
+  "author": {
+    "name": "Felipe Gajardo",
+    "email": "luisfelipegaos@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "gh-pages": "^2.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "rimraf": "^2.6.2",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.21.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "dependencies": {
+    "@material-ui/core": "^3.2.2",
+    "@material-ui/icons": "^3.0.1",
+    "jspdf": "^1.5.3",
+    "react-flexbox-grid": "^2.1.2"
+  },
+  "npmFileMap": [
+    {
+      "files": [
+        "dist/*.js",
+        "lib/*.js",
+        "src/*.js"
+      ]
+    }
+  ]
+}
